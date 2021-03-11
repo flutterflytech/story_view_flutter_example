@@ -43,12 +43,17 @@ class _StoryViewContainer extends State<StoryViewContainer> {
                   "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
               caption: "Image",
               controller: storyController),
+
           StoryItem.pageImage(
             url:
                 "https://media.tenor.com/images/7ce1d61932ac230f37470e38e6a48720/tenor.gif",
             caption: "Funny",
             controller: storyController,
           ),
+          StoryItem.pageVideo(
+              'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+              controller: storyController)
+
         ],
         onStoryShow: (s) {
           print("Showing a story");
